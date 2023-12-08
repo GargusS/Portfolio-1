@@ -128,7 +128,7 @@ a {
 }
 
 .card:after {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   width: 200%;
   height: 200%;
 }
@@ -197,5 +197,9 @@ a {
   }
   .info h1 {
     margin: 0;
+  }
+
+  .card details {
+    font-size: 0.7em;
   }
 }
