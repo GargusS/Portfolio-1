@@ -10,7 +10,7 @@
 
 :root {
   --bar-width: 6em;
-  --bar-height:1em;
+  --bar-height: 1em;
   --hamburger-gap: 0.3em;
   --foreground: antiquewhite;
   --background: #333;
@@ -126,6 +126,32 @@ body {
   position: relative;
   text-decoration: none;
   color: var(--accentColor);
+}
+
+/* Styles for the hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  
+}
+
+.hero-text {
+  width: 600px;
+  padding-left: 2em;
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hero-anim {
+  filter: drop-shadow(0.1em 0.1em 0.05em #000);
+}
+
+h1 {
+  color: #66CCFF;
+  filter: drop-shadow(0.1em 0.1em 0.05em #000);
 }
 
 a {
@@ -290,6 +316,10 @@ button:hover {
   max-height: 100%;
 }
 
+.lottie,
+* {
+  color: #135684;
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 1285px) {
   .cards-wrapper {
