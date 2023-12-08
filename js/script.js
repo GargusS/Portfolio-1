@@ -36,3 +36,14 @@ document.getElementById("myButton03ls").addEventListener("click", function () {
   // Redirect to the desired URL
   window.location.href = "https://project-exam-23.netlify.app/";
 });
+
+
+const menuBtn = document.querySelector(".menu-btn");
+const sidebar = document.querySelector(".sidebar");
+let menuOpen = false;
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("open", !menuOpen);
+  sidebar.classList.toggle("open", !menuOpen);
+  menuOpen = !menuOpen;
+});
