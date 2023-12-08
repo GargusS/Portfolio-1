@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700");
 
 :root {
-  --color: #3c3163;
-  --transition-time: 500ms;
+  --main: #135684;
+  --accent: crimson;
+  --transition-time: 250ms ease-in;
 }
 
 * {
@@ -13,7 +14,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Open Sans";
-  background: #fafafa;
+  background: var(--main);
 }
 
 a {
@@ -39,18 +40,18 @@ a {
       rgba(0, 0, 0, var(--bg-filter-opacity))
     ),
     var(--bg-img);
-  height: 20em;
+  height: 25em;
   width: 15em;
   font-size: 1.5em;
   color: white;
-  border-radius: 1em;
+  border-radius: 0.6em;
   padding: 1em;
-  /*margin: 2em;*/
+  /* margin: 2em; */
   display: flex;
   align-items: flex-end;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 5em -1em black;
+  box-shadow: 0 0 3em -1em rgb(86, 86, 86);
   transition: all, var(--transition-time);
   position: relative;
   overflow: hidden;
@@ -60,6 +61,7 @@ a {
 
 .card:hover {
   transform: rotate(0);
+  box-shadow: 0 0 6em -1em rgb(34, 34, 34);
 }
 
 .card h1 {
@@ -82,7 +84,7 @@ a {
 .card .tags .tag {
   font-size: 0.75em;
   background: rgba(255, 255, 255, 0.5);
-  border-radius: 0.3rem;
+  border-radius: 0.25rem;
   padding: 0 0.5em;
   margin-right: 0.5em;
   line-height: 1.5em;
@@ -90,8 +92,8 @@ a {
 }
 
 .card:hover .tags .tag {
-  background: var(--color);
-  color: white;
+  background: var(--main);
+  color: black;
 }
 
 .card .date {
@@ -102,37 +104,37 @@ a {
   padding: 1em;
   line-height: 1em;
   opacity: 0.8;
-  color: crimson;
+  color: var(--accent);
+  background: white;
+  border-radius: 0 0  0 1em;
+  box-shadow: 0 0 6em -1em rgb(34, 34, 34);
 }
 
 .card:before,
 .card:after {
   content: "";
   transform: scale(0);
-  transform-origin: top left;
-  border-radius: 50%;
+  transform-origin: bottom;
   position: absolute;
   left: -50%;
   top: -50%;
   z-index: -5;
   transition: all, var(--transition-time);
-  transition-timing-function: ease-in-out;
 }
 
 .card:before {
-  background: #ddd;
   width: 250%;
   height: 250%;
 }
 
 .card:after {
-  background: white;
+  background: rgba(0, 0, 0, 0.5);
   width: 200%;
   height: 200%;
 }
 
 .card:hover {
-  color: var(--color);
+  color: white;
 }
 
 .card:hover:before,
@@ -146,10 +148,17 @@ a {
   margin-left: 1rem;
 }
 
-details {
-  color: red;
+.card details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-time);
+  color: white;
   font-size: 0.8em;
   margin-bottom: 2em;
+}
+
+.card:hover details {
+  max-height: 100%;
 }
 
 /* MEDIA QUERIES */
