@@ -149,6 +149,7 @@ a {
   margin-right: 2em;
   font-weight: 700;
 }
+
 .header img {
   width: 100px;
   position: relative;
@@ -160,14 +161,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
 }
 
 .hero-text h1 {
   /* visibility: hidden; */
+  font-size: 4em;
   width: 600px;
   padding-left: 2em;
-  display: inline-grid;
+  display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   background-image: url(/assets/img/favicon.png);
