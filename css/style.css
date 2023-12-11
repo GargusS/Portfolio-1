@@ -279,7 +279,6 @@ a {
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 3em -1em rgb(86, 86, 86);
-  transition: all, var(--transition-time);
   position: relative;
   overflow: hidden;
   border: 10px solid #ccc;
@@ -322,6 +321,8 @@ a {
 .card:hover .tags .tag {
   background: var(--main);
   color: black;
+  /* transition: var(--transition-time); */
+
 }
 
 button {
@@ -359,6 +360,7 @@ button:hover {
 
 .card:before,
 .card:after {
+  transition: 500ms 0ms ease-in;
   content: "";
   transform: scale(0);
   transform-origin: bottom;
@@ -366,7 +368,6 @@ button:hover {
   left: -50%;
   top: -50%;
   z-index: -5;
-  transition: all, var(--transition-time);
 }
 
 .card:before {
@@ -398,14 +399,21 @@ button:hover {
 .card details {
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--transition-time);
   color: var(--foreground);
+  /* transition: max-height 500ms linear; */
   font-size: 0.8em;
   margin-bottom: 2em;
+  transition: 500ms 0ms ease-in;
+
 }
 
 .card:hover details {
   max-height: 100%;
+}
+
+.card summary:active{
+  transition: 500ms 0 ease-in;
+
 }
 
 /* MEDIA QUERIES */
