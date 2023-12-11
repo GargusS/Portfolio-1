@@ -230,6 +230,34 @@ a {
 .hero-anim {
   filter: drop-shadow(0.1em 0.1em 0.05em #000);
 }
+/* Contact section */
+
+.contact label,
+.contact input,
+.contact textarea,
+.contact button,
+.contact h4 {
+  display: block;
+  margin: 0.1em auto;
+  width: 20%;
+  font-size: 1.5em;
+  resize: none;
+  text-align: left;
+}
+
+.contact label {
+  padding-top: 1em;
+}
+
+.contact input {
+  padding: 0.2em 0.1em;
+}
+.contact button:hover {
+  /* background-color: var(--background); */
+  border: 3px solid #165bfb;
+  letter-spacing: 1.9em;
+  color: var(--foreground);
+}
 
 h2 {
   color: antiquewhite;
@@ -322,7 +350,6 @@ a {
   background: var(--main);
   color: black;
   /* transition: var(--transition-time); */
-
 }
 
 button {
@@ -404,16 +431,14 @@ button:hover {
   font-size: 0.8em;
   margin-bottom: 2em;
   transition: 500ms 0ms ease-in;
-
 }
 
 .card:hover details {
   max-height: 100%;
 }
 
-.card summary:active{
+.card summary:active {
   transition: 500ms 0 ease-in;
-
 }
 
 /* MEDIA QUERIES */

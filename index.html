@@ -21,7 +21,7 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="https://garguss.netlify.app/" target="_blank">My Sandbox</a></li>
-          <li><a href="./html/contact.html">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </aside>
     </div>
@@ -31,7 +31,7 @@
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="https://garguss.netlify.app/" target="_blank">My Sandbox</a></li>
-        <li><a href="./html/contact.html">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </section>
     <!-- Hero section -->
@@ -142,6 +142,30 @@
         </div>
       </section>
     </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input class="contact" type="text" id="name" name="name">
+
+          <label for="email">Email:</label>
+          <input class="contact" type="email" id="email" name="email">
+
+          <label for="subject">Subject:</label>
+          <input class="contact" type="text" id="subject" name="subject">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+
+          <h4 id="alertMessage" class="alert"></h4>
+
+          <button type="submit">Submit</button>
+        </form>
+
+
+      </div>
+    </section>
     <!-- Footer section -->
     <section class="footer"></section>
     <!-- Attribution -->
@@ -151,6 +175,7 @@
         href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a></section>
   </main>
   <script src="/js/script.js"></script>
+  <script src="/js/form.js"></script>
   <!-- <script src="/js/overflow.js"></script> -->
 </body>
 
