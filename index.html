@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link rel="stylesheet" href="/css/style.css">
-  <title>Document</title>
+  <title>Sonnesyn Portfolio</title>
 </head>
 
 <body>
@@ -21,29 +21,54 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./html/about.html">About</a></li>
-          <li><a href="./html/blog.html">Blogs</a></li>
+          <li><a href="./html/portfolio.html">Portfolio</a></li>
           <li><a href="./html/contact.html">Contact</a></li>
         </ul>
       </aside>
     </div>
     <!-- Header section -->
     <section class="header">
+      <img class="logo" src="/assets/img/favicon.png" alt="logo">
       <ul>
-        <li><img src="/assets/img/favicon.png" alt="logo"></li>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./html/about.html">About</a></li>
-        <li><a href="./html/portfolio.html">Blogs</a></li>
+        <li><a href="./html/portfolio.html">Portfolio</a></li>
         <li><a href="./html/contact.html">Contact</a></li>
       </ul>
     </section>
     <!-- Hero section -->
     <section class="hero">
-      <div class="hero-text">
-        <h1>Technology +
-          Creative Vision</h1>
-      </div>
-      <div class="hero-anim"><lottie-player src="/assets/Web Design Layout.json" background="transparent" speed="1"
+      <section>
+        <div class="title-wrapper">
+          <h1 class="tech-title">
+            <span data-text="Technology">Technology</span>
+            <span data-text="and">and</span>
+            <span data-text="Creativity">Creativity</span>
+          </h1>
+          <span class="top-title">Feed me all the</span>
+          <span class="bottom-title">you can find</span>
+          </div>
+      </section>
+      <div class="hero-anim"><lottie-player src="/assets/Web Design Layout.json" background="transparent" speed="1.5"
           style="width: 600px; height: 600px;" loop autoplay></lottie-player></div>
+    </section>
+    <!-- About section -->
+    <section class="about">
+      <h2>Greetings! I'm Geir Sønnesyn, a passionate Front-End Development student hailing from the picturesque
+        landscapes of Northern Norway. My journey into the world of coding began on January 10, 2023, and since then,
+        I've been on a quest to master the art of Front-End Development.
+        <br>
+        I believe in the power of clean, user-friendly design and seamless user experiences. With an insatiable
+        curiosity and a knack for problem-solving, I am committed to honing my skills to craft digital experiences that
+        not only meet but exceed expectations.
+        <br>
+        As I tread the path of becoming a skilled Front-End Developer, my aspirations extend beyond the surface. I am
+        eager to delve into the intricacies of backend technologies, particularly those intertwined with the dynamic
+        realm of JavaScript.
+        <br>
+        Join me on this exciting journey as I transform ideas into interactive and visually appealing web applications.
+        Let's shape the future of the digital landscape together!
+      </h2>
     </section>
     <!-- Portfolio section -->
     <section class="cards">
@@ -132,6 +157,7 @@
         href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a></section>
   </main>
   <script src="/js/script.js"></script>
+  <script src="/js/overflow.js"></script>
 </body>
 
 </html>
