@@ -159,7 +159,7 @@ a {
   top: 50%;
   margin-right: 3em;
   border: 3px solid transparent;
-  box-shadow: 0 0 0 3px #b23132;
+  box-shadow: 0 0 0 3px var(--accent);
 }
 
 /* Styles for the hero section */
@@ -242,7 +242,6 @@ a {
 .contact label,
 .contact input,
 .contact textarea,
-.contact button,
 .contact h4 {
   display: block;
   margin: 0.1em auto;
@@ -265,6 +264,7 @@ a {
 
 .contact .alert {
   padding: 2em 0;
+  text-align: center;
 }
 
 .contact input {
@@ -273,13 +273,18 @@ a {
 
 .contact button {
   background: var(--foreground);
+  box-shadow: 0 0 0 3px var(--background);
+  display: block;
+  margin: 0.1em auto;
+  font-size: 1.5em;
+  resize: none;
 }
 
 .contact button:hover {
-  /* background-color: var(--background); */
-  border: 3px solid #165bfb;
-  letter-spacing: 1.9em;
+  letter-spacing: 0.5em;
+  padding-left: 0.8em;
   color: var(--foreground);
+  box-shadow: 0 0 0 3px var(--foreground);
 }
 
 h2 {

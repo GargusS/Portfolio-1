@@ -37,12 +37,29 @@ document.getElementById("myButton03ls").addEventListener("click", function () {
   window.location.href = "https://project-exam-23.netlify.app/";
 });
 
-const menuBtn = document.querySelector(".menu-btn");
-const sidebar = document.querySelector(".sidebar");
-let menuOpen = false;
+document.addEventListener('DOMContentLoaded', function () {
+  const menuBtn = document.querySelector(".menu-btn");
+  const sidebar = document.querySelector(".sidebar");
+  const menuLinks = document.querySelectorAll('.sidebar a');
+  let menuOpen = false;
 
-menuBtn.addEventListener("click", () => {
-  menuBtn.classList.toggle("open", !menuOpen);
-  sidebar.classList.toggle("open", !menuOpen);
-  menuOpen = !menuOpen;
+  // Function to toggle menu visibility
+  function toggleMenu() {
+    menuBtn.classList.toggle("open", menuOpen);
+    sidebar.classList.toggle("open", menuOpen);
+  }
+
+  // Add click event listeners to each menu link
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      toggleMenu();
+      menuOpen = !menuOpen;
+    });
+  });
+
+  // Menu button click event
+  menuBtn.addEventListener("click", () => {
+    toggleMenu();
+    menuOpen = !menuOpen;
+  });
 });
