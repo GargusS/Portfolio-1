@@ -28,7 +28,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
   }
 
   // If all validations pass, proceed with form submission.
-  showSuccess("form submitted, thank you 👌🏼");
+  showSuccess("Form submitted, thank you 👌🏼");
 });
 
 function showError(message) {
