@@ -13,24 +13,26 @@
 <body>
   <main>
     <!-- Hamburger menu -->
-    <div class="hamburger">
+    <div class="hamburger" id="to-top">
       <div class="menu-btn">
         <div class="menu-btn__burger"></div>
       </div>
       <aside class="sidebar">
         <ul>
           <li><a href="./index.html">Home</a></li>
-          <li><a href="https://garguss.netlify.app/" target="_blank">My Sandbox</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
         </ul>
       </aside>
     </div>
     <!-- Header section -->
-    <section class="header">
+    <section class="header" id="header">
       <img class="logo" src="/assets/img/favicon.png" alt="logo">
       <ul>
         <li><a href="./index.html">Home</a></li>
-        <li><a href="https://garguss.netlify.app/" target="_blank">My Sandbox</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </section>
@@ -51,7 +53,7 @@
           style="width: 600px; height: 600px;" loop autoplay></lottie-player></div>
     </section>
     <!-- About section -->
-    <section class="about">
+    <section class="about" id="about">
       <h2>Hello World! 👋
         <p>I'm Geir Sønnesyn, a coding enthusiast based in Northern Norway. Since kickstarting my Front-End Development
           journey on January 10, 2023, I've been on a mission to blend pixels with purpose.</p>
@@ -65,7 +67,7 @@
       </h2>
     </section>
     <!-- Portfolio section -->
-    <section class="cards">
+    <section class="cards" id="portfolio">
       <section class="cards-wrapper">
         <div class="card-grid-space">
           <div class="num">01</div>
@@ -167,7 +169,24 @@
       </div>
     </section>
     <!-- Footer section -->
-    <section class="footer"></section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p>Email: <a href="mailto:geirsonnesyn@gmail.com">geirsonnesyn@gmail.com</a></p>
+          <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="footer-content">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/" target="_blank"><img class="social_icons" src="/assets/img/instagram.svg"
+              alt="Instagram social icon"></a>
+          <a href="https://www.youtube.com/" target="_blank"><img class="social_icons" src="/assets/img/youtube.svg"
+              alt="YouTube social icon"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img class="social_icons" src="/assets/img/facebook.svg"
+              alt="facebook social icon"></a>
+        </div>
+      </div>
+    </footer>
     <!-- Attribution -->
     <section class="Attribution"><a href="https://iconscout.com/lottie-animations/designer-building-website"
         class="text-underline font-size-sm lottie" target="_blank">Designer building website</a> by <a

@@ -21,6 +21,11 @@
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   min-height: 100vh;
@@ -150,7 +155,6 @@ a {
 }
 
 .logo {
-  /* width: 100px; */
   position: relative;
   top: 50%;
   margin-right: 3em;
@@ -208,7 +212,7 @@ a {
   span {
     display: block;
     position: relative;
-
+    color: var(--foreground);
     &:before {
       content: attr(data-text);
       position: absolute;
@@ -231,6 +235,9 @@ a {
   filter: drop-shadow(0.1em 0.1em 0.05em #000);
 }
 /* Contact section */
+.contact {
+  padding: 5em 0;
+}
 
 .contact label,
 .contact input,
@@ -239,7 +246,7 @@ a {
 .contact h4 {
   display: block;
   margin: 0.1em auto;
-  width: 20%;
+  min-width: 20%;
   font-size: 1.5em;
   resize: none;
   text-align: left;
@@ -247,11 +254,27 @@ a {
 
 .contact label {
   padding-top: 1em;
+  color: var(--foreground);
+  width: 20%;
+}
+
+.contact textarea {
+  width:15em;
+  height: 10em;
+}
+
+.contact .alert {
+  padding: 2em 0;
 }
 
 .contact input {
   padding: 0.2em 0.1em;
 }
+
+.contact button {
+  background: var(--foreground);
+}
+
 .contact button:hover {
   /* background-color: var(--background); */
   border: 3px solid #165bfb;
@@ -427,7 +450,6 @@ button:hover {
   max-height: 0;
   overflow: hidden;
   color: var(--foreground);
-  /* transition: max-height 500ms linear; */
   font-size: 0.8em;
   margin-bottom: 2em;
   transition: 500ms 0ms ease-in;
@@ -441,6 +463,59 @@ button:hover {
   transition: 500ms 0 ease-in;
 }
 
+footer {
+  max-width: 1920px;
+  font-size: 1.3em;
+  background-color: rgba(33, 33, 33, 0.8);
+  padding: 5em 0;
+  position: relative;
+  bottom: -3em;
+}
+
+footer.index {
+  position: absolute;
+  bottom: 0;
+}
+
+footer.details {
+  position: absolute;
+  bottom: 0;
+}
+
+footer h3,
+footer p {
+  margin-right: 4em;
+  color: var(--foreground);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-content {
+  display: flex;
+  margin: 1em;
+}
+
+.footer-content a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: var(--accent);
+}
+
+.social_icons {
+  width: 3em;
+  margin-right: 2em;
+}
+
+.social_icons:hover {
+  scale: 110%;
+  cursor: pointer;
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 1285px) {
   .title-wrapper {
@@ -462,9 +537,13 @@ button:hover {
   .hero-anim {
     display: none;
   }
+
+  footer{
+    display: none;
+  }  
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 995px) {
   .cards-wrapper {
     grid-template-columns: 1fr;
     padding: 4rem 2rem;

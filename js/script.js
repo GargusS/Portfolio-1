@@ -37,7 +37,6 @@ document.getElementById("myButton03ls").addEventListener("click", function () {
   window.location.href = "https://project-exam-23.netlify.app/";
 });
 
-
 const menuBtn = document.querySelector(".menu-btn");
 const sidebar = document.querySelector(".sidebar");
 let menuOpen = false;
