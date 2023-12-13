@@ -3,6 +3,8 @@
 [![Build Status](https://img.shields.io/badge/Check%20out%20Noroff%20here-FF3F00)](https://www.noroff.no/en/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+![image](/assets/img/portfolio.png)
+
 ## Greetings, Esteemed Explorer of Creativity!
 
 Welcome to my student portfolio, where the dance of pixels and the eloquence of code intertwine. I am your guide through the structured journey of my inaugural year as a Front-End Development practitioner in the captivating landscapes of Northern Norway.
