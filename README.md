@@ -65,10 +65,6 @@ This opens your project in a browser using the Live Server extension.
 
 ## Gratitude and Farewell 🌈
 
-As your odyssey through my creative realm concludes, I extend my sincere appreciation for accompanying me. May the traversal of these diverse and innovative projects, born from the depths of my imagination, bring you joy.
-
-Now, let us transition seamlessly to the next chapter. Together, we shall delve into the meticulous process of installing and running these digital wonders on your own device.
-
 ---
 
 _© 2023 Geir Sønnesyn, the Architect of Digital Dreams_
