@@ -164,7 +164,8 @@ a {
 
 .header a:hover {
   color: var(--accent);
-  transition: var(--animation-timing);
+  box-shadow: 0 3.06em 0 0 var(--accent);
+  transition: 300ms ease-out;
 }
 
 .logo {
