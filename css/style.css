@@ -32,7 +32,6 @@ body {
   max-width: 1920px;
   font-family: monospace;
   background: var(--main);
-  /* background-image: url(/assets/img/cool-background.png); */
   background-size: cover;
 }
 
@@ -61,7 +60,7 @@ a {
   z-index: 6;
   width: var(--bar-width);
   height: var(--bar-height);
-  background: var(--foreground);
+  background: var(--accent);
   border-radius: 0.5em;
   transition: var(--animation-timing);
 }
@@ -72,7 +71,7 @@ a {
   position: absolute;
   width: var(--bar-width);
   height: var(--bar-height);
-  background: var(--foreground);
+  background: var(--accent);
   border-radius: 0.5em;
   transition: var(--animation-timing);
 }
@@ -133,6 +132,7 @@ a {
 }
 .sidebar a:hover {
   position: relative;
+  font-weight: 700;
   text-decoration: none;
   color: var(--accent);
 }
@@ -140,7 +140,7 @@ a {
 /* Styles for the header section */
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 1.6em;
   height: 5em;
@@ -157,6 +157,7 @@ a {
 .logo {
   position: relative;
   top: 50%;
+  width: 8em;
   margin-right: 3em;
   border: 3px solid transparent;
   box-shadow: 0 0 0 3px var(--accent);
@@ -212,7 +213,6 @@ a {
   span {
     display: block;
     position: relative;
-    color: var(--foreground);
     &:before {
       content: attr(data-text);
       position: absolute;
@@ -478,12 +478,10 @@ footer {
 }
 
 footer.index {
-  position: absolute;
   bottom: 0;
 }
 
 footer.details {
-  position: absolute;
   bottom: 0;
 }
 
@@ -496,11 +494,12 @@ footer p {
 .footer-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.footer-content {
-  display: flex;
-  margin: 1em;
+.footer-content p,
+.footer-content h3{
+  margin: 1em 0;
 }
 
 .footer-content a {
@@ -514,7 +513,7 @@ footer p {
 
 .social_icons {
   width: 3em;
-  margin-right: 2em;
+  margin-right: 1em;
 }
 
 .social_icons:hover {
