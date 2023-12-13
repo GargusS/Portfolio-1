@@ -257,7 +257,7 @@ a {
 .contact h4 {
   display: block;
   margin: 0.1em auto;
-  min-width: 20%;
+  max-width: 15em;
   font-size: 1.5em;
   text-align: left;
 }
@@ -270,7 +270,7 @@ a {
 
 .contact textarea {
   resize: none;
-  width: 14em;
+  width: 15em;
   height: 10em;
 }
 
