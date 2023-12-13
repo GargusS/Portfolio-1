@@ -30,14 +30,14 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   max-width: 1920px;
-  font-family: monospace;
+  font-family: monospace, ui-monospace;
   background: var(--main);
   background-size: cover;
 }
 
 h2 {
   color: antiquewhite;
-  font-family: monospace;
+  font-family: monospace, ui-monospace;
   line-height: 200%;
   letter-spacing: 0.1em;
   margin: 0 auto;
