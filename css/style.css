@@ -168,9 +168,9 @@ a {
   transition: 300ms ease-out;
 }
 
-.logo {
-  position: relative;
-  top: 50%;
+.logo img {
+  position: absolute;
+  top: 1em;
   width: 8em;
   margin-right: 3em;
   border: 3px solid transparent;
