@@ -1,4 +1,4 @@
-# Noroff student Code Portfolio 🚀
+# Noroff Student Code Portfolio 🚀
 
 [![Build Status](https://img.shields.io/badge/Check%20out%20Noroff%20here-FF3F00)](https://www.noroff.no/en/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -11,27 +11,22 @@ Welcome to my student portfolio, where the dance of pixels and the eloquence of 
 
 Embark on a curated expedition through my featured projects, each encapsulating a repository of knowledge gained and dreams brought to fruition:
 
-> [**Project 1:** Gamehub](https://github.com/GargusS/Gamehub)
+> [**Project 1: Gamehub**](https://github.com/GargusS/Gamehub)
 
-- Debut HTML/CSS project: A dynamic online space, uniting gamers through seamless design and connectivity.
+- **Overview:** Debut HTML/CSS project creating a dynamic online space for gamers with seamless design and connectivity.
+- **Technologies Used:** HTML, CSS, JavaScript.
 
-  - Later on the year javascript was added to fetch products from a Noroff API
+> [**Project 2: Semester Project One**](https://github.com/GargusS/SemesterProjectOne)
 
-> [**Project 2:** Semester Project One](https://github.com/GargusS/SemesterProjectOne)
+- **Overview:** Explore science wonders at the community museum, inspiring curiosity and fostering discovery for all.
 
-- Explore science wonders at the community museum. Inspiring curiosity, fostering discovery for all.
+- **Technologies Used:** HTML, CSS.
 
-> [**Project 3:** Project Exam 1](https://github.com/GargusS/project_exam_2023)
+> [**Project 3: Project Exam 1**](https://github.com/GargusS/project_exam_2023)
 
-- Elevating solutions, mastering challenges with precision in every code byte
+- **Overview:** Elevating solutions, mastering challenges with precision in every code byte.
 
----
-
-## Gratitude and Farewell 🌈
-
-As your odyssey through my creative realm concludes, I extend my sincere appreciation for accompanying me. May the traversal of these diverse and innovative projects, born from the depths of my imagination, bring you joy.
-
-Now, let us transition seamlessly to the next chapter. Together, we shall delve into the meticulous process of installing and running these digital wonders on your own device.
+- **Technologies Used:** HTML, CSS, JavaScript.
 
 ---
 
@@ -65,6 +60,14 @@ Now, let us transition seamlessly to the next chapter. Together, we shall delve 
    Right-click on the HTML file you want to preview and select "Open with Live Server" from the context menu.
 
 This opens your project in a browser using the Live Server extension.
+
+---
+
+## Gratitude and Farewell 🌈
+
+As your odyssey through my creative realm concludes, I extend my sincere appreciation for accompanying me. May the traversal of these diverse and innovative projects, born from the depths of my imagination, bring you joy.
+
+Now, let us transition seamlessly to the next chapter. Together, we shall delve into the meticulous process of installing and running these digital wonders on your own device.
 
 ---
 
