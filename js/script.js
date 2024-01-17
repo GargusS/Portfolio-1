@@ -29,7 +29,7 @@ document.getElementById("myButton02ls").addEventListener("click", function () {
 // Add an event listener to button the github repo
 document.getElementById("myButton03gh").addEventListener("click", function () {
   // Redirect to the desired URL
-  window.location.href = "https://github.com/GargusS/project_exam_2023";
+  window.location.href = "https://github.com/GargusS/Project-exam-23-Famous-Robots-corp";
 });
 // Add an event listener on button to the live site
 document.getElementById("myButton03ls").addEventListener("click", function () {
